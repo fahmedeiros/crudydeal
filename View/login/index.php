@@ -17,7 +17,7 @@
                        <h5>TELA DE LOGIN</h5>
                     </div>
                     <div class="panel-body">
-                        <form action="" method="POST">
+                        <form action="../../Controller/validation.php" method="POST">
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="glyphicon glyphicon-user"></i>
@@ -37,6 +37,15 @@
                             </div>
                         </form>
                     </div>
+
+                    <?php
+                        if(isset($_GET["msg"])){
+                            $msg_ext = $_GET["msg"] == "erro_login" ? "Login Inválido!" : "Dados Insuficientes!";?>
+                        <div class="panel-footer text-center">
+                            <i class="glyphicon glyphicon-warning-sign"></i>
+                            <?php echo $msg_ext ?>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
             <div class="col-sm-4"></div>
