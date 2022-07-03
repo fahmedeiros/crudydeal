@@ -17,7 +17,7 @@
                        <h5>TELA DE LOGIN</h5>
                     </div>
                     <div class="panel-body">
-                        <form action="../../Controller/validation.php" method="POST">
+                        <form action="../../Controller/validation_user.php" method="POST">
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="glyphicon glyphicon-user"></i>
